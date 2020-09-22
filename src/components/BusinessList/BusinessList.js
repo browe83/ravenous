@@ -1,4 +1,4 @@
-import { React, Component } from "react";
+import React, { Component } from "react";
 import "./BusinessList.css";
 import Business from "../Business/Business";
 
