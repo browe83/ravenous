@@ -14,12 +14,13 @@ class SearchBar extends Component {
       "Highetest Rated": "rating",
       "Most Reviewed": "review_count",
     };
+
     this.handleTermChange = this.handleTermChange.bind(this);
     this.handleLocationChange = this.handleLocationChange.bind(this);
   }
 
   getSortByClass(sortByOption) {
-    if (sortByOption === this.sortBy) {
+    if (this.state.sortBy === sortByOption) {
       return "active";
     } else {
       return "";
@@ -28,7 +29,7 @@ class SearchBar extends Component {
 
   handleSortByChange(sortByOption) {
     this.setState({
-      sortby: sortByOption,
+      sortBy: sortByOption,
     });
   }
   handleTermChange(e) {
